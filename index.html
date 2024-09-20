@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Facu</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#proyecto" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJn6Nv3z72vfpPRpciJ2n9Z97v82SuXrlXR6BIhWdV6LvNlUzU=s288-c-no" alt="">
+            </div>
+            <h1>FACUNDO ROMANO</h1>
+            <h2>Developer - Analista de Sistemas</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/facundo-romano-546247215/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:romanofacundoezequiel@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://wa.me/+541133906134" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>¡Hola! Soy Facundo Ezequiel Romano,</span> estudiante de la Tecnicatura en Programación en la UTN Facultad Regional General Pacheco. Actualmente, me desempeño como Analista de Sistemas, con un enfoque en la gestión de bases de datos. Tengo proyección a desarrollar mi carrera como programador, especialmente en tecnologías como C# .NET y SQL.
+                Estoy comprometido con el aprendizaje continuo y la mejora de mis habilidades para ofrecer soluciones tecnológicas eficientes. Mi objetivo es seguir creciendo profesionalmente y asumir nuevos desafíos en el mundo del desarrollo de software.</p>
+            <a href="Cv_FacundoRomano.pdf" class="boton-descargar" target="_blank">Descargar CV <i class="fa-solid fa-download"></i></a>
+        </div>
+    </section>
+
+
+    <section id=skills class="skills">
+        <h2 class="skills-titulo">Skills</h2>
+        <div class="skills-container">
+        <div class="skill">
+            <img src="img/html.png" alt="HTML" class="skill-icon">
+            <span class="skill-name">HTML</span>
+        </div>
+        <div class="skill">
+            <img src="img/css.png" alt="css" class="skill-icon">
+            <span class="skill-name">CSS</span>
+        </div>
+        <div class="skill">
+            <img src="img/javascript.png" alt="JavaScript" class="skill-icon">
+            <span class="skill-name">JavaScript</span>
+        </div>
+        <div class="skill">
+            <img src="img/react.png" alt="React" class="skill-icon">
+            <span class="skill-name">React</span>
+        </div>
+        <div class="skill">
+            <img src="img/firebase.png" alt="FireBase" class="skill-icon">
+            <span class="skill-name">FireBase</span>
+        </div>
+        <div class="skill">
+            <img src="img/SqlServer.png" alt="SQL Server" class="skill-icon">
+            <span class="skill-name">SQL Server</span>
+        </div>
+        <div class="skill">
+            <img src="img/postgres.png" alt="PostgreSQL" class="skill-icon">
+            <span class="skill-name">PostgreSQL</span>
+        </div>
+        <div class="skill">
+            <img src="img/csharp.png" alt="C#" class="skill-icon">
+            <span class="skill-name">C#</span>
+        </div>
+        <div class="skill">
+            <img src="img/net.png" alt=".NET" class="skill-icon">
+            <span class="skill-name">.NET</span>
+        </div>
+        <div class="skill">
+            <img src="img/cmasmas.png" alt="C++" class="skill-icon">
+            <span class="skill-name">C++</span>
+        </div>
+        <div class="skill">
+            <img src="img/github.png" alt="GitHub" class="skill-icon">
+            <span class="skill-name">GitHub</span>
+        </div>
+    </div>
+    </section>
+    
+
+
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnicatura Universitaria en Programación</h4>
+                        <span class="casa">Universidad Tecnologica Nacional General Pacheco</span>
+                        <span class="fecha">2022 - Actualidad</span>
+                        <p>La Tecnicatura en Programación de la UTN forma profesionales en el diseño, desarrollo y mantenimiento de sistemas informáticos. La carrera abarca fundamentos de programación, estructuras de datos, desarrollo web, y bases de datos. Ofrece formación práctica y teórica, preparando a los egresados para roles como desarrollador de software, programador web y analista de sistemas en la industria tecnológica.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Licenciatura en informática</h4>
+                        <span class="casa">Universidad Nacional General Sarmiento</span>
+                        <span class="fecha">2019 - Actualidad</span>
+                        <p>La Licenciatura en Sistemas de Información de la Universidad Nacional de General Sarmiento (UNGS) prepara a los estudiantes para diseñar, desarrollar y gestionar sistemas de información en diversos contextos. El programa aborda áreas como programación, análisis de sistemas, gestión de proyectos, y bases de datos, combinando teoría y práctica para formar profesionales capaces de enfrentar desafíos tecnológicos en el ámbito empresarial y organizacional.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnicatura en Electrónica</h4>
+                        <span class="casa">EETN° 1 Eduardo Ader, Vte. López</span>
+                        <span class="fecha">2005 - 2010</span>
+                        <p>La Tecnicatura en Electrónica de la Escuela Técnica Nº 1 de Vicente López proporciona una formación integral en el campo de la electrónica. El programa ofrece conocimientos prácticos y teóricos en áreas como circuitos electrónicos, sistemas digitales, comunicaciones, y automatización. Los estudiantes adquieren habilidades en el diseño, implementación y mantenimiento de sistemas electrónicos, preparándolos para trabajar en industrias tecnológicas, de comunicaciones, y en el ámbito de la investigación y desarrollo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <h3>Cursos</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo web Full Stack (HTML/CSS,
+                            Javascript, React, Firebase) </h4>
+                        <span class="casa">Escuela Dev Rock</span>
+                        <span class="fecha">Jonathan Ariste</span>
+                        <p>El curso de HTML, CSS, JavaScript, React y Firebase de Jonathan Ariste en Escuela Dev Rock ofrece una formación integral en desarrollo web. Cubre desde los fundamentos de HTML y CSS hasta el desarrollo de aplicaciones dinámicas con React y la gestión de datos y autenticación con Firebase. Ideal para adquirir habilidades prácticas y actuales en tecnología web.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico en Armado y Reparación de PC y Notebook</h4>
+                        <span class="casa">UTN General Pacheco</span>
+                        <span class="fecha">2016</span>
+                        <p>
+                            El Técnico en Armado y Reparación de PC y Notebook de UTN General Pacheco capacita a los estudiantes en el ensamblaje, diagnóstico y reparación de computadoras y notebooks. El programa incluye prácticas en mantenimiento de hardware, resolución de problemas técnicos y actualización de sistemas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Analista de Sistemas</h4>
+                        <span class="casa">Coppel S.A</span>
+                        <span class="fecha">2022 - Actualidad</span>
+                        <p>Como Analista de Sistemas en Coppel, gestiono y optimizo las áreas de tiendas, bodega, finanzas y contabilidad. Utilizo Protheus, SQL Server y PostgreSQL para desarrollar soluciones de software y generar reportes personalizados que mejoren la eficiencia operativa y el análisis de datos. Mi rol implica la integración y el soporte continuo de los sistemas, asegurando que las necesidades específicas de la empresa sean atendidas con precisión.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Tecnico en electrónica</h4>
+                        <span class="casa">Coppel S.A</span>
+                        <span class="fecha">2015 - 2022</span>
+                        <p>Especificación del puesto: Encargado del sector de
+                            informática en el centro de Servicios y Garantías de Coppel
+                            Argentina.
+                            Mis tareas y responsabilidades fueron mantener el orden de los
+                            distintos inventarios, llevando a cabo cada proceso en
+                            tiempo y forma.
+                            Reparación general de productos electrónicos
+                            Devoluciones, altas y contacto directo con proveedores.
+                            Asistencia y resolución inmediata a tiendas.
+                            Apoyo administrativo y técnico en todas las áreas del centro.
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Tecnico en electrónica</h4>
+                        <span class="casa">SEAC S.A</span>
+                        <span class="fecha">2012 - 2015</span>
+                        <p>Especificación del puesto: Reparación general (capacitores,
+                            flash, microprocesador, resistencias, pistas, fuentes de
+                            alimentación, etc.) de módems Cablevisión, módems wifi
+                            Cablevisión, Reparación general y programación de
+                            decodificadores DCT y ARION de Cablevisión y
+                            decodificadores ANTINA, y capacitacion de nuevo personal.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="proyecto" class="proyecto">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="item-proyecto">
+                    <a href="https://github.com/fromano2197/Sistema_de_Gestion_para_taller_de_electronica_Laboratorio2" target="_blank">
+                        <img src="img/sistemataller.jpg" alt="Sistema de Gestión para Taller de Reparación">
+                        <div class="overlay">
+                            <h3>Sistema de Gestión para Taller de Reparación</h3>
+                            <p>Sistema en consola desarrollado en C++ para la gestión integral de un taller de reparación de electrónica. Permite registrar clientes, artículos, órdenes de reparación y su seguimiento, además de generar informes y mantener la seguridad mediante un sistema de inicio de sesión.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-proyecto">
+                    <a href="https://github.com/fromano2197/tp-winform-equipo-13.git" target="_blank">
+                        <img src="img/stockmaster.jpg" alt="Aplicación para la gestión de artículos de un catálogo de un comercio">
+                        <div class="overlay">
+                            <h3>Aplicación para la gestión de artículos de un catálogo de un comercio</h3>
+                            <p>Esta aplicación de escritorio, desarrollada en .NET con C# y WinForms, gestiona artículos de un catálogo comercial. Permite listar, buscar, agregar, modificar y eliminar artículos, además de administrar marcas, categorías y múltiples imágenes por producto. Toda la información se guarda en una base de datos, facilitando su uso en distintos servicios como webs y apps móviles.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+ 
+    <footer id="contacto" class="contacto">
+        <h2>CONTACTO</h2>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="mailto:romanofacundoezequiel@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/+541133906134" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/facundo.romano.92"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/romano_faq/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/facundo-romano-546247215/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
